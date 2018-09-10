@@ -1,1 +1,1 @@
-Simple calculator app to try cimple React things
+Simple calculator app to try simple React things

@@ -82,6 +82,15 @@ class Calculator extends Component {
             }
             default: return;
           }
+          _this.calcInput.animate([
+            { opacity: '1' },
+            { opacity: '.25' },
+            { opacity: '1' }
+          ], {
+            // timing options
+            duration: 500,
+            iterations: 1
+          });
           _this.setState({
             operation: null,
             arg: _this.calcInput.value
@@ -147,6 +156,8 @@ class Calculator extends Component {
             <span className='calculator-number' onClick={this.clear}>
               <span>CE</span>
             </span>
+            {/* some extra button */}
+            <span className='calculator-number'></span>
           </div>
           <div className='calculator-actions'>
             {this.renderActions()}

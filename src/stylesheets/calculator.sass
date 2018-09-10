@@ -1,6 +1,7 @@
 .calculator
   max-width: 400px
   margin: 0 auto
+  outline: 1px solid #93132d
   &-controls
     display: grid
     grid-template:
@@ -17,13 +18,14 @@
     text-align: center
     padding: 10px 0
     cursor: pointer
-    transition: opacity .5s ease
+    transition: box-shadow .3s ease
     display: flex
     user-select: none
     > span
       margin: auto
     &:hover
-      opacity: .5
+      // opacity: .5
+      box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 1)
   &-action
     background-color: #f2274f
     color: white
